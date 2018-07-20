@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
 function NewSmokerForm(props){
   let _date = null;
@@ -12,7 +13,7 @@ function NewSmokerForm(props){
 
   function handleFormSubmission(e) {
     e.preventDefault();
-    props.onNewUserCreation({date: _date.value, time: _time.value, perDay: _perDay.value, packPrice: _packPrice.value, cigaretteTime: _cigaretteTime.value, smokerTime: _smokerTime.value})
+    props.onNewUserCreation({date: _date.value, time: _time.value, perDay: _perDay.value, packPrice: _packPrice.value, cigaretteTime: _cigaretteTime.value, smokerTime: _smokerTime.value, id: v4()})
     _date.value = '';
     _time.value = '';
     _perDay.value = '';

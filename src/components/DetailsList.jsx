@@ -3,9 +3,10 @@ import Smoker from './Smoker';
 import PropTypes from 'prop-types';
 
 function DetailsList(props){
+  console.log(props.smokerDetails);
   return (
     <div>
-    {props.smokerDetails.map((smoker, index) =>
+    {props.smokerDetails.map((smoker) =>
       <Smoker
       date={smoker.date}
       time={smoker.time}
@@ -13,7 +14,7 @@ function DetailsList(props){
       packPrice={smoker.packPrice}
       cigaretteTime={smoker.cigaretteTime}
       smokerTime={smoker.smokerTime}
-      key={index} />
+      key={smoker.id} />
     )}
     </div>
   );
