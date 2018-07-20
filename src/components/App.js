@@ -3,7 +3,7 @@ import Header from './Header';
 import DetailsList from './DetailsList'
 import { Switch, Route } from 'react-router-dom';
 import Time from './Time';
-import NewSmokerForm from './NewSmokerForm';
+import WelcomeControl from './WelcomeControl';
 import Error404 from './Error404';
 import Info from './Info';
 import Health from './Health';
@@ -13,7 +13,7 @@ function App() {
       <div className="conatainerStyles">
         <Header />
         <Switch>
-          <Route exact path='/' component={NewSmokerForm} />
+          <Route exact path='/' component={WelcomeControl} />
           <Route path='/details' component={DetailsList} />
           <Route path='/time' component={Time} />
           <Route path='/info' component={Info} />

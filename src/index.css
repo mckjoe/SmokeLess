@@ -5,6 +5,12 @@ body {
   background-color: #E4CEAC;
 }
 
+button {
+  border-radius: 5px;
+  background-color: snow;
+  border: 1px solid orange;
+}
+
 .header {
   position: relative;
   display: flex;
