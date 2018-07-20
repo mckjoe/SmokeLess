@@ -1,31 +1,26 @@
 import React from "react";
 import Smoker from './Smoker';
+import PropTypes from 'prop-types';
 
-var masterSmokerDetails = [
-  {
-    date: 'Sept 4th 2018',
-    time: '7:02 PM',
-    perDay: '15',
-    packPrice: '$7.75',
-    cigaretteTime: '12',
-    smokerTime: '12'
-  }
-];
-function DetailsList(){
+function DetailsList(props){
   return (
     <div>
-    {masterSmokerDetails.map((smoker, index) =>
+    {props.smokerDetails.map((smoker, index) =>
       <Smoker
-      date="Sept 4th 2018"
-      time="7:02 PM"
-      perDay="15"
-      packPrice="$7.75"
-      cigaretteTime="12"
-      smokerTime="12"
+      date={smoker.date}
+      time={smoker.time}
+      perDay={smoker.perDay}
+      packPrice={smoker.packPrice}
+      cigaretteTime={smoker.cigaretteTime}
+      smokerTime={smoker.smokerTime}
       key={index} />
     )}
     </div>
   );
+}
+
+DetailsList.propTypes = {
+  smokerDetails: PropTypes.array
 }
 
 export default DetailsList;

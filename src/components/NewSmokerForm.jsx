@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-function NewSmokerForm(){
+function NewSmokerForm(props){
   let _date = null;
   let _time = null;
   let _perDay = null;
@@ -11,12 +12,7 @@ function NewSmokerForm(){
 
   function handleFormSubmission(e) {
     e.preventDefault();
-    console.log(_date.value);
-    console.log(_time.value);
-    console.log(_perDay.value);
-    console.log(_packPrice.value);
-    console.log(_cigaretteTime.value);
-    console.log(_smokerTime.value);
+    props.onNewUserCreation({date: _date.value, time: _time.value, perDay: _perDay.value, packPrice: _packPrice.value, cigaretteTime: _cigaretteTime.value, smokerTime: _smokerTime.value})
     _date.value = '';
     _time.value = '';
     _perDay.value = '';
@@ -32,7 +28,7 @@ function NewSmokerForm(){
           type='date'
           id='date'
           placeholder='Date You Quit'
-          ref={(input) => {_date = input;}}/>/><br />
+          ref={(input) => {_date = input;}}/><br />
         <input
           type='text'
           id='time'
@@ -61,6 +57,10 @@ function NewSmokerForm(){
       </form>
     </div>
   );
+}
+
+NewSmokerForm.propTypes = {
+  onNewUserCreation: PropTypes.func
 }
 
 export default NewSmokerForm;
