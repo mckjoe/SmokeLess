@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px 10px 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.conatainerStyles {
+  text-align: center;
+}
+
+.newSmokerForm input {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 459px) {
+  .header {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-content: center;
+  }
+  .logo {
+    display: none;
+  }
+
+}
