@@ -4,6 +4,9 @@ import DetailsList from './DetailsList'
 import { Switch, Route } from 'react-router-dom';
 import Time from './Time';
 import NewSmokerForm from './NewSmokerForm';
+import Error404 from './Error404';
+import Info from './Info';
+import Health from './Health';
 
 function App() {
     return (
@@ -12,6 +15,10 @@ function App() {
         <Switch>
           <Route exact path='/' component={NewSmokerForm} />
           <Route path='/details' component={DetailsList} />
+          <Route path='/time' component={Time} />
+          <Route path='/info' component={Info} />
+          <Route path='/health' component={Health} />
+          <Route component={Error404} />
         </Switch>
       </div>
     );
