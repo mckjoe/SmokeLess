@@ -7,7 +7,7 @@ function Header(){
       <img className="logo" src={nosmoking} />
       <h1>smokeLess</h1>
       <div className="headerLinks">
-        <Link to="/details">Details</Link> | <Link to="/time">Time</Link> | <Link to="/info">Info</Link> | <Link to="/health">Health</Link>
+        <Link to="/details">Details</Link> | <Link to="/time">Time</Link> | <Link to="/info">Info</Link> | <Link to="/health">Health</Link>| <Link to="/share">Share</Link>
       </div>
     </div>
   );

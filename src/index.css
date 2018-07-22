@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-color: #E4CEAC;
+  min-width: 215px;
 }
 
 button {
@@ -83,6 +84,57 @@ input {
   border: 2px solid orange;
   border-radius: 3px;
   padding: 5px 15px 5px 15px;
+}
+
+.shareMain {
+  display: flex;
+  align-items: center;
+  background-color: snow;
+  width: 90%;
+  margin: 10px auto;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid orange;
+  position: relative;
+  font-size: 14px;
+}
+
+.postingPerson img {
+  width: 50px;
+}
+
+.postBody {
+  padding: 5px;
+  min-width: 200px;
+  /* transform: translateY(-10px); */
+}
+.postBody  h5 {
+  margin-bottom: 15px;
+}
+
+.postBody p {
+  font-size: 12px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.postForm {
+  background-color: snow;
+  width: 80%;
+  margin: 0 auto 15px auto;
+  padding: 15px;
+  border: 2px solid orange;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.postForm button {
+  margin-left: 10px;
+}
+
+.profilePic {
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width: 459px) {
