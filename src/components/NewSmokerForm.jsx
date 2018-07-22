@@ -56,6 +56,7 @@ function NewSmokerForm(props){
           ref={(input) => {_smokerTime = input;}}/><br />
           <button type='submit'>submit</button>
       </form>
+      <button className="nextButton"><Link to="details">Next</Link></button>
     </div>
   );
 }

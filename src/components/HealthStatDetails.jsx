@@ -5,8 +5,8 @@ function HealthStatDetails(props) {
   return (
     <div className="listDisplay">
       <div  className="healthStat">
-      <h4>At {props.time}</h4>
-      <p>{props.bennefit}</p>
+      <h4 className="statHeader">At {props.time}</h4>
+      <p className="hidden">{props.bennefit}</p>
       </div>
     </div>
   );

@@ -42,11 +42,35 @@ button {
   margin-top: 20px;
 }
 
+.nextButton {
+  position: absolute;
+  right: 15px;
+}
+
 .healthStat {
   border: 2px solid orange;
   padding: 25px;
   background-color: snow;
   margin: 5px;
+}
+
+.statHeader {
+  transition: color .5s;
+
+}
+
+.statHeader:hover + .hidden {
+  display: block;
+  color: black;
+}
+
+.statHeader:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.hidden {
+  display: none;
 }
 
 input {
