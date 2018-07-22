@@ -19,25 +19,29 @@ class App extends React.Component {
           profilePic: "https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png",
           name: "Joseph McKinney",
           quitDate: "April 2nd, 2017",
-          body: "Congratulations everyone! You've made it this far and should be proud of yourself, keep it up!"
+          body: "Congratulations everyone! You've made it this far and should be proud of yourself, keep it up!",
+          key: '1'
         },
         {
           profilePic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4SVau-uGL427A4ED3q5ijSb_X9eKhrDmYTqthYmYrjPdb34jB",
           name: "Lisa Gallagher",
           quitDate: "February 22nd, 2013",
-          body: "Looking back on my experience stopping smoking, and grateful because I couldn't have done it without all of your support.  Thanks everybody!"
+          body: "Looking back on my experience stopping smoking, and grateful because I couldn't have done it without all of your support.  Thanks everybody!",
+          key: '2'
         },
         {
           profilePic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTlSwY7B-xACH1E2qMkQNaM6mjPvd66Oj-1T05aIElhuayzzrR",
           name: "Freddy Prince",
           quitDate: "August 13th, 2017",
-          body: "Can't believe I made it this long! Talking to my friends when I've had cravings has been such a hugge relief for me."
+          body: "Can't believe I made it this long! Talking to my friends when I've had cravings has been such a hugge relief for me.",
+          key: '3'
         },
         {
           profilePic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSknbk4m9sJEgunq_Wg1sOOPSNFXS52q_z-l2QF3sM16Dy0KZoswg",
           name: "Johnathan Taylor",
           quitDate: "June 12th, 2018",
-          body: "Didn't sleep much last night, anyone have any suggestions to help me sleep?"
+          body: "Didn't sleep much last night, anyone have any suggestions to help me sleep?",
+          key: '4'
         }
       ],
       quitStats: [

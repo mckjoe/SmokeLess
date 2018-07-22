@@ -4,15 +4,16 @@ import PostForm from './PostForm';
 import PropTypes from 'prop-types';
 
 function PostList(props) {
+  console.log(props)
   return (
     <div>
       <PostForm onNewPostCreation={props.onNewPostCreation}/>
-      {props.postList.map((post, index) =>
+      {props.postList.map((post) =>
         <Post  name={post.name}
           profilePic= {post.profilePic}
           quitDate={post.quitDate}
           body={post.body}
-          key={index} />
+          key={post.key} />
       )}
     </div>
   );

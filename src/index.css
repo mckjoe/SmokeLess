@@ -106,7 +106,7 @@ input {
 .postBody {
   padding: 5px;
   min-width: 200px;
-  /* transform: translateY(-10px); */
+  transform: translateY(-10px);
 }
 .postBody  h5 {
   margin-bottom: 15px;
