@@ -42,6 +42,13 @@ button {
   margin-top: 20px;
 }
 
+.healthStat {
+  border: 2px solid orange;
+  padding: 25px;
+  background-color: snow;
+  margin: 5px;
+}
+
 input {
   margin-bottom: 15px;
   background-color: snow;
@@ -63,5 +70,7 @@ input {
   .headerLinks {
     padding-bottom: 25px;
   }
-
+  .list {
+    display: grid;
+  }
 }
