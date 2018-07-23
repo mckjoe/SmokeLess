@@ -11,17 +11,23 @@ function convertMSToDays(ms) {
   h = h % 24;
   return { d: d };
 };
-function Info() {
+function Info(props) {
   var time = convertMSToDays(41246121609);
   var cigarettes = time.d * 15;
   var money = cigarettes / 20 * 7.25;
   var spent = money.toFixed(2);
+  var minutesSaved = cigarettes * 12;
   return (
     <div>
-      <p>In {time.d} days, </p>
-      <p>I would have smoked {cigarettes} cigarettes</p>
-      <p>and spent ${spent}</p>
-      <p>This will be info about stats</p>
+      <p>In the past: </p>
+      <p className = "output">{time.d} Days</p>
+      <p>I would have smoked:</p>
+      <p className = "output">{cigarettes} cigarettes</p>
+      <p>and spent:</p>
+      <p className = "output">${spent}</p>
+      <p>in about:</p>
+      <p className = "output">{minutesSaved} minutes.</p>
+      <p>Congratulations!  You should be incredibly proud of yourself!</p>
     </div>
   );
 }

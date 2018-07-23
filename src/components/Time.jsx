@@ -1,6 +1,8 @@
 import React from 'react';
 import TimeAgo from 'react-timeago';
 
+const time=null;
+
 function convertMS(ms) {
   var d, h, m, s;
   s = Math.floor(ms / 1000);
@@ -14,13 +16,15 @@ function convertMS(ms) {
 };
 
 function Time(){
-  var time=convertMS(41246121609);
+  var time= convertMS(41246121609)
   return (
-    <div>
+    <div className='output'>
+      <p>I quit smoking cigarettes</p>
       <p>{time.d} Days</p>
       <p>{time.h} Hours</p>
       <p>{time.m} Minutes</p>
       <p>{time.s} Seconds</p>
+      <p>Ago...</p>
     </div>
   );
 }

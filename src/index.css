@@ -91,6 +91,15 @@ button {
   display: block;
 }
 
+.output {
+  background-color: snow;
+  border: 2px solid orange;
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 input {
   margin-bottom: 15px;
   background-color: snow;

@@ -168,7 +168,9 @@ class App extends React.Component {
           <Route path='/details' render={()=><DetailsList smokerDetails={this.state.masterSmokerDetails} />} />
 
           <Route path='/time' component={Time} />
-          <Route path='/info' component={Info} />
+
+          <Route path='/info' render={()=><Info smokerDetails={this.state.masterSmokerDetails} />} />
+
           <Route path='/health' render={()=><Health quitStats={this.state.quitStats} />} />
 
           <Route path='/share' render={()=><PostList
