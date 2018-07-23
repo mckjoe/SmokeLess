@@ -20,7 +20,8 @@ class App extends React.Component {
           name: "Joseph McKinney",
           quitDate: "April 2nd, 2017",
           body: "Congratulations everyone! You've made it this far and should be proud of yourself, keep it up!",
-          key: '1'
+          key: '1',
+          timePosted: ''
         },
         {
           profilePic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4SVau-uGL427A4ED3q5ijSb_X9eKhrDmYTqthYmYrjPdb34jB",

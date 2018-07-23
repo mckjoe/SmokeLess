@@ -1,8 +1,13 @@
+html {
+  min-height: 100%;
+  background: linear-gradient(snow, #E4CEAC) ;
+}
+
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #E4CEAC;
   min-width: 215px;
 }
 
@@ -12,13 +17,15 @@ button {
   border: 1px solid orange;
 }
 
+.app {
+}
+
 .header {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-  background-color: snow;
   padding-bottom: 10px;
   padding-top: 10px;
   color: orange;
@@ -76,6 +83,12 @@ button {
 
 .hidden {
   display: none;
+  color: snow;
+  /* transition: color .5s; */
+}
+
+.listDisplay:last-of-type p {
+  display: block;
 }
 
 input {
@@ -137,7 +150,7 @@ input {
   height: 50px;
 }
 
-@media screen and (max-width: 459px) {
+@media screen and (max-width: 547px) {
   .header {
     display: grid;
     grid-template-rows: 1fr auto;

@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 function Smoker(props){
   return (
     <div>
-      <p>I quit Smoking {props.date}</p>
+      <p>I quit Smoking  on {props.date}</p>
       <p>at {props.time}</p>
-      <p>I smoked {props.perDay} cigarettes per day</p>
-      <p>I paid {props.packPrice} per pack</p>
+      <p>I smoked {props.perDay} cigarettes per day,</p>
+      <p>I paid {props.packPrice} per pack,</p>
       <p>and spent {props.cigaretteTime} minutes each cigarette </p>
       <p>for about {props.smokerTime} years</p>
     </div>

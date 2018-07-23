@@ -4,7 +4,6 @@ import PostForm from './PostForm';
 import PropTypes from 'prop-types';
 
 function PostList(props) {
-  console.log(props)
   return (
     <div>
       <PostForm onNewPostCreation={props.onNewPostCreation}/>

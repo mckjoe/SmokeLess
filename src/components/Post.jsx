@@ -17,10 +17,11 @@ function Post(props) {
   );
 }
 
+
 Post.propTypes = {
   name: PropTypes.string,
   quitDate: PropTypes.string,
-  body: PropTypes.string
+  body: PropTypes.string,
 }
 
 export default Post;

@@ -31,7 +31,7 @@ function NewSmokerForm(props){
           placeholder='Date You Quit'
           ref={(input) => {_date = input;}}/><br />
         <input
-          type='text'
+          type='time'
           id='time'
           placeholder='Time of last cigarette'
           ref={(input) => {_time = input;}}/><br />
