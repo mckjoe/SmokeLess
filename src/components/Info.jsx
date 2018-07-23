@@ -15,10 +15,17 @@ function convertMSToDays(ms) {
 function Info(props) {
   if (props.smokerDetails.length > 0) {
     var stoppedSmokingDate =  props.smokerDetails[0].date;
+    var stoppedSmoking 
     console.log(stoppedSmokingDate);
   }
+  console.log(stoppedSmokingDate);
+  let quitTime = new Date(stoppedSmokingDate);
+  let todaysDate = new Date();
+  let timeEllapsed = todaysDate - quitTime;
+  console.log(timeEllapsed);
 
-    var time = convertMSToDays(41246121609);
+
+    var time = convertMSToDays(timeEllapsed);
     var cigarettes = time.d * 15;
     var money = cigarettes / 20 * 7.25;
     var spent = money.toFixed(2);

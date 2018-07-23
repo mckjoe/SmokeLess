@@ -20,6 +20,10 @@ button {
 .app {
 }
 
+.welcome {
+  padding: 50px;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -52,7 +56,7 @@ button {
 
 .nextButton {
   position: absolute;
-  right: 15px;
+  right: 115px;
 }
 
 .healthStat {

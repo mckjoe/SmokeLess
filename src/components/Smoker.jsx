@@ -2,9 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Smoker(props){
-  let quitTime = new Date(props.date);
-  let mili = quitTime.getTime();
-  console.log(mili);
+
   return (
     <div>
       <p>I quit Smoking  on {props.date}</p>
