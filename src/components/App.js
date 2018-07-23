@@ -139,7 +139,7 @@ class App extends React.Component {
           benefit: "If a female, your excess risk of death from all smoking related causes, including lung disease and cancer, has now reduced to that of a never-smoker. Risk of pancreatic cancer has also declined to that of a never-smoker."
         }
       ],
-      masterSmokerDetails: []
+      masterSmokerDetails: [],
     };
     this.handleCreatingNewUser = this.handleCreatingNewUser.bind(this);
     this.handleAddingNewPostToList = this.handleAddingNewPostToList.bind(this);
@@ -148,7 +148,9 @@ class App extends React.Component {
   handleCreatingNewUser(newUser) {
     var newMasterSmokerDetails = this.state.masterSmokerDetails.slice();
     newMasterSmokerDetails.push(newUser);
-    this.setState({masterSmokerDetails: newMasterSmokerDetails});
+    this.setState({masterSmokerDetails: newMasterSmokerDetails}, (newState) => {
+      console.log(this.state);
+    });
   }
 
   handleAddingNewPostToList(newPost) {

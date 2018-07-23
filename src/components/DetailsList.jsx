@@ -3,7 +3,6 @@ import Smoker from './Smoker';
 import PropTypes from 'prop-types';
 
 function DetailsList(props){
-  console.log(props.smokerDetails);
   return (
     <div>
     {props.smokerDetails.map((smoker) =>
