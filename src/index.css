@@ -17,11 +17,22 @@ button {
   border: 1px solid orange;
 }
 
-.app {
+button:hover {
+  cursor: pointer;
+  background-color: red;
 }
 
 .welcome {
   padding: 50px;
+}
+
+.links {
+  color: red;
+}
+
+.links:hover {
+  cursor: pointer;
+  background-color: black;
 }
 
 .header {
