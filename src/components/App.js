@@ -169,7 +169,7 @@ class App extends React.Component {
 
           <Route path='/details' render={()=><DetailsList smokerDetails={this.state.masterSmokerDetails} />} />
 
-          <Route path='/time' component={Time} />
+          <Route path='/time' render={()=><Time smokerDetails={this.state.masterSmokerDetails} />} />
 
           <Route path='/info' render={()=><Info smokerDetails={this.state.masterSmokerDetails} />} />
 
