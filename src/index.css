@@ -11,10 +11,39 @@ body {
   min-width: 215px;
 }
 
+form {
+  background-color: snow;
+  width: 45%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+input {
+  margin-bottom: 15px;
+  background-color: snow;
+  border: 2px solid orange;
+  border-radius: 3px;
+  padding: 5px 15px 5px 15px;
+}
+
+input:invalid+span:after {
+    content: '✖';
+    color: red;
+    padding-left: 5px;
+}
+
+input:valid+span:after {
+    content: '✓';
+    color: green;
+    padding-left: 5px;
+}
+
 button {
   border-radius: 5px;
   background-color: snow;
   border: 1px solid orange;
+  transition: background-color .5s;
 }
 
 button:hover {
@@ -27,7 +56,10 @@ button:hover {
 }
 
 .links {
+  margin-left: 3px;
+  margin-right: 3px;
   color: red;
+  transition: background-color .5s;
 }
 
 .links:hover {
@@ -122,19 +154,12 @@ button:hover {
   border-radius: 5px;
 }
 
-input {
-  margin-bottom: 15px;
-  background-color: snow;
-  border: 2px solid orange;
-  border-radius: 3px;
-  padding: 5px 15px 5px 15px;
-}
-
 .shareMain {
   display: flex;
   align-items: center;
   background-color: snow;
   width: 90%;
+  max-width: 700px;
   margin: 10px auto;
   padding: 15px;
   box-sizing: border-box;
@@ -170,10 +195,16 @@ input {
   border: 2px solid orange;
   display: flex;
   justify-content: space-evenly;
+  max-width: 700px;
+}
+
+.textArea {
+  border: none;
 }
 
 .postForm button {
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .profilePic {
@@ -196,5 +227,11 @@ input {
   }
   .list {
     display: grid;
+  }
+  .form {
+    background-color: inherit;
+    width: auto;
+    border: none;
+    margin-bottom: 25px;
   }
 }

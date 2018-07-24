@@ -24,8 +24,9 @@ class Time extends React.Component {
   render() {
     if (this.props.smokerDetails.length > 0) {
       var stoppedSmokingDate =  this.props.smokerDetails[0].date;
+      var stoppedSmokingTime = this.props.smokerDetails[0].time;
     }
-
+    console.log(stoppedSmokingTime);
     let quitTime = new Date(stoppedSmokingDate);
     let todaysDate = new Date();
     let timeEllapsed = todaysDate - quitTime;

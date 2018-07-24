@@ -33,7 +33,6 @@ function Info(props) {
 
     return (
       <div>
-        <p>{stoppedSmokingDate}</p>
         <p>In the past: </p>
         <p className = "output">{time.d} Days</p>
         <p>I would have smoked:</p>

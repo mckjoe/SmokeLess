@@ -14,10 +14,11 @@ function PostForm(props) {
   return (
     <div className="postForm">
       <img className="profilePic" src="https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png" />
-      <form onSubmit={handleNewPostSubmission}>
+      <form className="textArea" onSubmit={handleNewPostSubmission}>
         <textarea
         type='textarea'
         id='body'
+        required
         placeholder='Please type post here'
         ref={(textarea) => {_body = textarea;}}/>
         <button type="submit">Post!</button>
