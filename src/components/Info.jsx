@@ -19,7 +19,6 @@ function Info(props) {
     var packPrice = props.smokerDetails[0].packPrice;
     var cigaretteTime = props.smokerDetails[0].cigaretteTime;
   }
-  console.log(packPrice);
   let quitTime = new Date(stoppedSmokingDate);
   let todaysDate = new Date();
   let timeEllapsed = todaysDate - quitTime;

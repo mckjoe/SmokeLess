@@ -5,7 +5,6 @@ import { v4 } from 'uuid';
 
 function NewSmokerForm(props){
   let _date = null;
-  let _time = null;
   let _perDay = null;
   let _packPrice = null;
   let _cigaretteTime = null;
@@ -13,9 +12,8 @@ function NewSmokerForm(props){
 
   function handleFormSubmission(e) {
     e.preventDefault();
-    props.onNewUserCreation({date: _date.value, time: _time.value, perDay: _perDay.value, packPrice: _packPrice.value, cigaretteTime: _cigaretteTime.value, smokerTime: _smokerTime.value, id: v4()})
+    props.onNewUserCreation({date: _date.value, perDay: _perDay.value, packPrice: _packPrice.value, cigaretteTime: _cigaretteTime.value, smokerTime: _smokerTime.value, id: v4()})
     _date.value = '';
-    _time.value = '';
     _perDay.value = '';
     _packPrice.value = '';
     _cigaretteTime.value = '';
@@ -27,7 +25,7 @@ function NewSmokerForm(props){
     <p>Tell us a little about your habbit:</p>
       <form className="form" onSubmit={handleFormSubmission}>
         <input
-          type='date'
+          type='datetime-local'
           id='date'
           placeholder='Date of Last Cigarette'
           max="2018-07-27"
@@ -35,37 +33,30 @@ function NewSmokerForm(props){
           ref={(input) => {_date = input;}}/><span className="validity"></span>
           <br />
         <input
-          type='time'
-          id='time'
-          placeholder='Time of last cigarette'
-          required
-          ref={(input) => {_time = input;}}/><span className="validity"></span>
-          <br />
-        <input
+          type="number"
+          pattern="[0-9]{3}"
           id='perDay'
           placeholder='Cigarettes per Day'
-          pattern="[0-9]"
           required
           ref={(input) => {_perDay = input;}}/><br />
         <input
-          type='text'
+          type="text"
           id='packPrice'
           placeholder='Price per Pack'
-          pattern="[0-9]"
           required
           ref={(input) => {_packPrice = input;}}/><br />
         <input
-          type='text'
+          type='number'
+          pattern="[0-9]{3}"
           id='cigaretteTime'
           placeholder='Minutes per cigarette'
-          pattern="[0-9]"
           required
           ref={(input) => {_cigaretteTime = input;}}/><br />
         <input
-          type='text'
+          type='number'
+          pattern="[0-9]{3}"
           id='smokerTime'
           placeholder='Years as a Smoker'
-          pattern="[0-9]"
           ref={(input) => {_smokerTime = input;}}/><br />
           <button type='submit'>submit</button>
       </form>

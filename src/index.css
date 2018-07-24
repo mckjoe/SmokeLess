@@ -84,6 +84,12 @@ button:hover {
   margin-right: 15px;
 }
 
+.title {
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+
 .logo {
   margin-left: 10px;
   width: 50px;
@@ -98,6 +104,15 @@ button:hover {
   margin-top: 20px;
 }
 
+.smokerDetails {
+  background-color: snow;
+  border: 2px solid orange;
+  border-radius: 5px;
+  padding: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .nextButton {
   position: absolute;
   right: 115px;
@@ -105,6 +120,7 @@ button:hover {
 
 .healthStat {
   border: 2px solid orange;
+  border-radius: 5px;
   padding: 25px;
   background-color: snow;
   margin: 5px;
@@ -212,6 +228,16 @@ button:hover {
   height: 50px;
 }
 
+.footerLogo {
+  width: 30%;
+}
+
+@media screen and (min-width: 547px) {
+  .footerLogo {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 547px) {
   .header {
     display: grid;
@@ -221,6 +247,11 @@ button:hover {
   }
   .logo {
     display: none;
+  }
+  .title {
+    text-decoration: underline;
+    text-decoration-color: red;
+    border: 2px solid snow;
   }
   .headerLinks {
     padding-bottom: 25px;

@@ -8,6 +8,7 @@ import Error404 from './Error404';
 import Info from './Info';
 import Health from './Health';
 import PostList from './PostList';
+import FooterImage from './FooterImage';
 
 class App extends React.Component {
 
@@ -180,6 +181,7 @@ class App extends React.Component {
              postList = {this.state.masterPostList}/>} />
           <Route component={Error404} />
         </Switch>
+        <FooterImage />
       </div>
     );
   }
