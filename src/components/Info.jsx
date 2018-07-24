@@ -33,16 +33,16 @@ function Info(props) {
 
     return (
       <div>
-      <p>{stoppedSmokingDate}</p>
-      <p>In the past: </p>
-      <p className = "output">{time.d} Days</p>
-      <p>I would have smoked:</p>
-      <p className = "output">{cigarettes} cigarettes</p>
-      <p>and spent:</p>
-      <p className = "output">${spent}</p>
-      <p>in about:</p>
-      <p className = "output">{minutesSaved} minutes.</p>
-      <p>Congratulations!  You should be incredibly proud of yourself!</p>
+        <p>{stoppedSmokingDate}</p>
+        <p>In the past: </p>
+        <p className = "output">{time.d} Days</p>
+        <p>I would have smoked:</p>
+        <p className = "output">{cigarettes} cigarettes</p>
+        <p>and spent:</p>
+        <p className = "output">${spent}</p>
+        <p>in about:</p>
+        <p className = "output">{minutesSaved} minutes.</p>
+        <p>Congratulations!  You should be incredibly proud of yourself!</p>
       </div>
     );
 

@@ -17,13 +17,16 @@ function convertMS(ms) {
 };
 
 function Time(props){
-  // if (props.smokerDetails.length > 0) {
-  //   var stoppedSmokingDate =  props.smokerDetails[0].date;
-  // }
-  // console.log(stoppedSmokingDate);
-  //
-  // var time= convertMS(1111111111);      look at info to find the rest of the code to make this work.  start by converting stoppedSmokingDate into ms
-  var time= convertMS(1111111111); 
+  if (props.smokerDetails.length > 0) {
+    var stoppedSmokingDate =  props.smokerDetails[0].date;
+  }
+
+  let quitTime = new Date(stoppedSmokingDate);
+  let todaysDate = new Date();
+  let timeEllapsed = todaysDate - quitTime;
+  var time = convertMS(timeEllapsed);
+  console.log(timeEllapsed);
+
   return (
     <div className='output'>
       <p>I quit smoking cigarettes</p>
