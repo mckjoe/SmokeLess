@@ -1,6 +1,6 @@
 import React from 'react';
-import TimeAgo from 'react-timeago';
 import PropTypes from 'prop-types';
+import Header from './Header';
 
 class Time extends React.Component {
   constructor(props){
@@ -30,7 +30,6 @@ class Time extends React.Component {
   render() {
     if (this.props.smokerDetails.length > 0) {
       var stoppedSmokingDate =  this.props.smokerDetails[0].date;
-      var stoppedSmokingTime = this.props.smokerDetails[0].time;
     }
     let quitTime = new Date(stoppedSmokingDate);
     let todaysDate = new Date();
@@ -39,6 +38,7 @@ class Time extends React.Component {
 
     return (
       <div>
+        <Header />
         <div className='output'>
         <p>I quit smoking cigarettes</p>
         <p>{time.d} Days</p>

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Header from './Header';
 
 function convertMSToDays(ms) {
   var d, h, m, s;
@@ -32,6 +33,7 @@ function Info(props) {
 
     return (
       <div>
+      <Header />
         <p>In the past: </p>
         <p className = "output">{time.d} Days</p>
         <p>I would have smoked:</p>

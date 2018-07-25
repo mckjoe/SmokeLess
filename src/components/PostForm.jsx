@@ -13,7 +13,7 @@ function PostForm(props) {
 
   return (
     <div className="postForm">
-      <img className="profilePic" src="https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png" />
+      <img className="profilePic" src="https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png" alt="my profile pic for social posting." />
       <form className="textArea" onSubmit={handleNewPostSubmission}>
         <textarea
         type='textarea'

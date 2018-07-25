@@ -1,10 +1,12 @@
 import React from "react";
 import Smoker from './Smoker';
 import PropTypes from 'prop-types';
+import Header from './Header';
 
 function DetailsList(props){
   return (
     <div>
+      <Header />
     {props.smokerDetails.map((smoker) =>
       <Smoker
       date={smoker.date}

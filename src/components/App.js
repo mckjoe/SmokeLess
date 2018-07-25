@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 import DetailsList from './DetailsList'
 import { Switch, Route } from 'react-router-dom';
 import Time from './Time';
@@ -93,7 +92,7 @@ class App extends React.Component {
         },
         {
           time: "21 Days",
-          benefit: "The number of acetylcholine receptors, which were up-regulated in response to nicotine\'s presence in the frontal, parietal, temporal, occipital, basal ganglia, thalamus, brain stem and cerebellum regions of your brain have now substantially down-regulated. Receptor binding has returned to levels seen in the brains of non-smokers (2007 study)."
+          benefit: "The number of acetylcholine receptors, which were up-regulated in response to nicotine's presence in the frontal, parietal, temporal, occipital, basal ganglia, thalamus, brain stem and cerebellum regions of your brain have now substantially down-regulated. Receptor binding has returned to levels seen in the brains of non-smokers (2007 study)."
         },
         {
           time: "3 Weeks to 3 Months",
@@ -140,10 +139,14 @@ class App extends React.Component {
           benefit: "If a female, your excess risk of death from all smoking related causes, including lung disease and cancer, has now reduced to that of a never-smoker. Risk of pancreatic cancer has also declined to that of a never-smoker."
         }
       ],
-      masterSmokerDetails: [],
+      masterSmokerDetails: []
     };
     this.handleCreatingNewUser = this.handleCreatingNewUser.bind(this);
     this.handleAddingNewPostToList = this.handleAddingNewPostToList.bind(this);
+  }
+
+  updateTime() {
+
   }
 
   handleCreatingNewUser(newUser) {
@@ -163,7 +166,6 @@ class App extends React.Component {
   render(){
     return (
       <div className="conatainerStyles">
-        <Header />
         <Switch>
 
           <Route exact path='/' render={()=><WelcomeControl onNewUserCreation={this.handleCreatingNewUser} />} />

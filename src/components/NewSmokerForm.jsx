@@ -12,7 +12,7 @@ function NewSmokerForm(props){
 
   function handleFormSubmission(e) {
     e.preventDefault();
-    props.onNewUserCreation({date: _date.value, perDay: _perDay.value, packPrice: _packPrice.value, cigaretteTime: _cigaretteTime.value, smokerTime: _smokerTime.value, id: v4()})
+    props.onNewUserCreation({date: _date.value, perDay: _perDay.value, packPrice: _packPrice.value, cigaretteTime: _cigaretteTime.value, smokerTime: _smokerTime.value, id: v4(), milliesQuit: _date.value})
     _date.value = '';
     _perDay.value = '';
     _packPrice.value = '';
@@ -24,7 +24,7 @@ function NewSmokerForm(props){
     <div className="newSmokerForm">
     <p>Tell us a little about your habbit:</p>
       <form className="form" onSubmit={handleFormSubmission}>
-        <label for="date">Date you stopped smoking:</label>
+        <label htmlFor="date">Date you stopped smoking:</label><br />
         <input
           type='datetime-local'
           id='date'
@@ -32,7 +32,7 @@ function NewSmokerForm(props){
           required
           ref={(input) => {_date = input;}}/><span className="validity"></span>
         <br />
-        <label for="perDay">Cigarettes per day:</label>
+        <label htmlFor="perDay">Cigarettes per day:</label><br />
         <input
           type="number"
           pattern="[0-9]{3}"
@@ -40,14 +40,14 @@ function NewSmokerForm(props){
           placeholder='Example: 15'
           required
           ref={(input) => {_perDay = input;}}/><br />
-        <label for="packPrice">Price per pack:</label>
+        <label htmlFor="packPrice">Price per pack:</label><br />
         <input
           type="text"
           id='packPrice'
           placeholder='Example: 7.75'
           required
           ref={(input) => {_packPrice = input;}}/><br />
-        <label for="cigaretteTime">Minutes per cigarette:</label>
+        <label htmlFor="cigaretteTime">Minutes per cigarette:</label><br />
         <input
           type='number'
           pattern="[0-9]{3}"
@@ -55,7 +55,7 @@ function NewSmokerForm(props){
           placeholder='Example: 12'
           required
           ref={(input) => {_cigaretteTime = input;}}/><br />
-        <label for="smokerTime">Years as a smoker:</label>
+        <label htmlFor="smokerTime">Years as a smoker:</label><br />
         <input
           type='number'
           pattern="[0-9]{3}"

@@ -8,7 +8,7 @@ function Header(){
 
   return (
     <div className="header">
-      <img className="logo" src={nosmoking} />
+      <img className="logo" src={nosmoking} alt="smokeLess logo, no smoking sign." />
       <h1 className="title">smokeLess</h1>
       <div className="headerLinks">
         <Link className="links" style={linkStyling} to="/details">Details</Link> | <Link className="links" style={linkStyling} to="/time">Time</Link> | <Link className="links" style={linkStyling} to="/info">Info</Link> | <Link className="links" style={linkStyling} to="/health">Health</Link> | <Link className="links" style={linkStyling} to="/share">Share</Link>
