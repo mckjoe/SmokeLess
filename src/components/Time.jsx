@@ -19,13 +19,13 @@ class Time extends React.Component {
     return { d: d, h: h, m: m, s: s };
   };
 
-  componentDidMount = function() {
-    this.countdown = setInterval(this.time, 1000);
-  }
-
-  componentWillUnmount = function() {
-    clearInterval(this.countdown)
-  }
+  // componentDidMount = function() {
+  //   this.countdown = setInterval(this.time, 1000);
+  // }
+  //
+  // componentWillUnmount = function() {
+  //   clearInterval(this.countdown)
+  // }
 
   render() {
     if (this.props.smokerDetails.length > 0) {
