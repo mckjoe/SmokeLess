@@ -24,39 +24,43 @@ function NewSmokerForm(props){
     <div className="newSmokerForm">
     <p>Tell us a little about your habbit:</p>
       <form className="form" onSubmit={handleFormSubmission}>
+        <label for="date">Date you stopped smoking:</label>
         <input
           type='datetime-local'
           id='date'
-          placeholder='Date of Last Cigarette'
           max="2018-07-27"
           required
           ref={(input) => {_date = input;}}/><span className="validity"></span>
-          <br />
+        <br />
+        <label for="perDay">Cigarettes per day:</label>
         <input
           type="number"
           pattern="[0-9]{3}"
           id='perDay'
-          placeholder='Cigarettes per Day'
+          placeholder='Example: 15'
           required
           ref={(input) => {_perDay = input;}}/><br />
+        <label for="packPrice">Price per pack:</label>
         <input
           type="text"
           id='packPrice'
-          placeholder='Price per Pack'
+          placeholder='Example: 7.75'
           required
           ref={(input) => {_packPrice = input;}}/><br />
+        <label for="cigaretteTime">Minutes per cigarette:</label>
         <input
           type='number'
           pattern="[0-9]{3}"
           id='cigaretteTime'
-          placeholder='Minutes per cigarette'
+          placeholder='Example: 12'
           required
           ref={(input) => {_cigaretteTime = input;}}/><br />
+        <label for="smokerTime">Years as a smoker:</label>
         <input
           type='number'
           pattern="[0-9]{3}"
           id='smokerTime'
-          placeholder='Years as a Smoker'
+          placeholder='Example: 12'
           ref={(input) => {_smokerTime = input;}}/><br />
           <button type='submit'>submit</button>
       </form>

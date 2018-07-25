@@ -6,7 +6,7 @@ function Smoker(props){
     <div className="smokerDetails">
       <p>For about {props.smokerTime } years,</p>
       <p>I smoked {props.perDay} cigarettes each day,</p>
-      <p>I paid {props.packPrice} per pack,</p>
+      <p>I paid ${props.packPrice} per pack,</p>
       <p>and spent {props.cigaretteTime} minutes smoking each cigarette.</p>
     </div>
   );

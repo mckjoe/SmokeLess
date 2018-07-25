@@ -44,7 +44,6 @@ class Time extends React.Component {
         <p>{time.d} Days</p>
         <p>{time.h} Hours</p>
         <p>{time.m} Minutes</p>
-        <p>{time.s} Seconds</p>
         <p>Ago...</p>
         </div>
       </div>
