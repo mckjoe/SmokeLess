@@ -2,7 +2,7 @@ import React from 'react';
 import DetailsList from './DetailsList'
 import { Switch, Route } from 'react-router-dom';
 import Time from './Time';
-import WelcomeControl from './WelcomeControl';
+import WelcomeControl from './welcomeControl';
 import Error404 from './Error404';
 import Info from './Info';
 import Health from './Health';
