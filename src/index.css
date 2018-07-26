@@ -149,7 +149,6 @@ button:hover {
 .hidden {
   display: none;
   color: snow;
-  /* transition: color .5s; */
 }
 
 .listDisplay {
