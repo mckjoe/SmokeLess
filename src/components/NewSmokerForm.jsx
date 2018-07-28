@@ -28,8 +28,6 @@ function NewSmokerForm(props){
         <input
           type='datetime-local'
           id='date'
-          max="2018-07-27"
-          required
           ref={(input) => {_date = input;}}/><span className="validity"></span>
         <br />
         <label htmlFor="perDay">Cigarettes per day:</label><br />
